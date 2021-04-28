@@ -4,7 +4,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.Assert;
 
-public class LastNameTest {
+public class ValidLastNameTest {
     @Test 
     	public void givenLastName_WhenProper_ShouldReturnTrue() {
         LastName classUnderTest = new LastName();

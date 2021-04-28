@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Assert;
 
-public class FirstNameTest {
+public class ValidFirstNameTest {
     @Test 
     	public void givenFirstName_WhenProper_ShouldReturnTrue() {
         FirstName classUnderTest = new FirstName();
