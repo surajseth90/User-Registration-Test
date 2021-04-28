@@ -3,6 +3,11 @@ package User.Registration.Test;
 import java.util.Arrays;
 import java.util.Collection;
 
+import org.junit.Test;
+import static org.junit.Assert.*;
+import org.junit.Assert;
+
+
 public class ValidEmailTest {
 	private String email2Test;
 	private boolean expectedResult;
@@ -38,9 +43,9 @@ public class ValidEmailTest {
 		
 	}
 	
-	public void givenEmailArray_WhenValid_ShouldReturnTrue() { 
-	 Email email = new Email();
-	 boolean result = email.validEmail(email);
-		
+		public void givenEmailArray_ShouldReturnAsPerParametrizedResult() { 
+		Email email = new Email();
+		boolean result = email.validEmail(this.email2Test);
+		Assert.assertEquals(this.expectedResult ,result);
 	}
 }
